@@ -263,37 +263,37 @@
       ⚠️ 先着20名限定・定員に達し次第〆切
     </div>
 
-    <!-- Google Forms に送信 -->
+    <!-- Google Apps Script に送信 -->
     <form id="seminar-form"
-          action="https://docs.google.com/forms/d/e/1FAIpQLSfNAwycT9EkE3Wjvvvpr6DDjaQUvMzK59ULkQocUHTLkAHgVQ/formResponse"
+          action="https://script.google.com/macros/s/AKfycbwCahFNYu4Kmg0TYjI5sASfteokFJtwPfonq2ZdibRFfpDFJjsQfasIJ_ozSKmA4jqG/exec"
           method="POST"
           target="hidden-iframe">
 
       <div class="field-group">
         <label>会社名<span class="required">必須</span></label>
-        <input type="text" name="entry.254846117" placeholder="例：株式会社〇〇製作所" required>
+        <input type="text" name="会社名" placeholder="例：株式会社〇〇製作所" required>
       </div>
 
       <div class="field-group">
         <label>お名前<span class="required">必須</span></label>
-        <input type="text" name="entry.1806406249" placeholder="例：山田 太郎" required>
+        <input type="text" name="お名前" placeholder="例：山田 太郎" required>
       </div>
 
       <div class="field-group">
         <label>役職</label>
-        <input type="text" name="entry.300639812" placeholder="例：代表取締役、工場長、採用担当">
+        <input type="text" name="役職" placeholder="例：代表取締役、工場長、採用担当">
       </div>
 
       <hr class="form-divider">
 
       <div class="field-group">
         <label>メールアドレス<span class="required">必須</span></label>
-        <input type="email" name="entry.1639150221" placeholder="例：info@example.co.jp" required>
+        <input type="email" name="メールアドレス" placeholder="例：info@example.co.jp" required>
       </div>
 
       <div class="field-group">
         <label>電話番号<span class="required">必須</span></label>
-        <input type="tel" name="entry.2119101103" placeholder="例：027-000-0000" required>
+        <input type="tel" name="電話番号" placeholder="例：027-000-0000" required>
       </div>
 
       <hr class="form-divider">
@@ -302,11 +302,11 @@
         <label>参加方法<span class="required">必須</span></label>
         <div class="radio-group">
           <label>
-            <input type="radio" name="entry.669058561" value="会場参加（高崎）" required>
+            <input type="radio" name="参加方法" value="会場参加（高崎）" required>
             <span>🏢 会場参加（高崎）</span>
           </label>
           <label>
-            <input type="radio" name="entry.669058561" value="オンライン参加（Zoom）">
+            <input type="radio" name="参加方法" value="オンライン参加（Zoom）">
             <span>💻 オンライン参加（Zoom）</span>
           </label>
         </div>
@@ -314,7 +314,7 @@
 
       <div class="field-group">
         <label>従業員数</label>
-        <select name="entry.67157915">
+        <select name="従業員数">
           <option value="">選択してください</option>
           <option value="〜10名">〜10名</option>
           <option value="11〜30名">11〜30名</option>
@@ -325,7 +325,7 @@
 
       <div class="field-group">
         <label>採用に関するお悩み（任意）</label>
-        <textarea name="entry.1681588016" placeholder="現在の採用状況や、セミナーで聞きたいことなどをご自由にお書きください。"></textarea>
+        <textarea name="お悩み" placeholder="現在の採用状況や、セミナーで聞きたいことなどをご自由にお書きください。"></textarea>
       </div>
 
       <div class="submit-wrap">
