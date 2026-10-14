@@ -37,9 +37,9 @@
     display: inline-block;
     background: var(--accent);
     color: white;
-    font-size: 20px;
+    font-size: 13px;
     font-weight: bold;
-    padding: 10px 26px;
+    padding: 6px 18px;
     border-radius: 20px;
     margin-bottom: 20px;
     letter-spacing: 1px;
@@ -68,8 +68,7 @@
     width: 100%;
   }
   .hero-result p { font-size: 15px; opacity: 0.85; margin-bottom: 8px; }
-  .hero-result .result-big { font-size: clamp(18px, 3vw, 24px); font-weight: 900; color: #ffd700; line-height: 1.7; }
-  .hero-result .result-big span.result-sub { font-size: clamp(14px, 2.5vw, 18px); display: block; margin-bottom: 4px; color: rgba(255,255,255,0.75); font-weight: normal; }
+  .hero-result .result-big { font-size: clamp(20px, 3.5vw, 28px); font-weight: 900; color: #ffd700; }
   .hero-free {
     background: var(--accent);
     border-radius: 8px;
@@ -113,7 +112,7 @@
     padding-bottom: 4px;
   }
   .section-lead { text-align: center; color: var(--text-light); font-size: 15px; margin-bottom: 40px; }
-  .divider { width: 60px; height: 4px; background: var(--primary); margin: 16px auto 40px; border-radius: 2px; }
+  .divider { width: 60px; height: 4px; background: var(--accent); margin: 16px auto 40px; border-radius: 2px; }
 
   /* ===== PAIN SECTION ===== */
   .pain-section { background: var(--bg-light); }
@@ -401,21 +400,26 @@
 
 <!-- STICKY CTA -->
 <div class="sticky-cta">
-  <a href="https://mashimo-toshiaki.github.io/lp-sokukou/form.html">▶ 先着20名限定・今すぐ無料で申し込む</a>
+  <a href="#apply">▶ 先着10名限定・今すぐ無料で申し込む</a>
 </div>
 
 <!-- ===== HERO ===== -->
 <section class="hero">
   <div class="container">
-    <div class="hero-badge">製造業の社長・採用担当者へ</div>
+    <div class="hero-badge">製造業・現場職種 採用担当者様へ</div>
     <h1>
-      <span class="accent">大手求人会社に頼っても<br>欲しい人材が来なかった。</span><br>
-      その理由が、<br>このセミナーで<span class="accent">スッキリわかった。</span>
+      <span class="accent">１年間ゼロだった応募が<br>１か月で３名に。</span><br>
+      採用費は<span class="accent">70％削減</span>。
     </h1>
     <p class="hero-sub">製造業のための <strong>"現業特化型" 即効採用術セミナー</strong></p>
-    <div class="hero-free">特別無料ご招待</div>
+    <div class="hero-result">
+      <p>群馬県の金属加工業 A社（実例）</p>
+      <div class="result-big">求人票を書き換えただけで<br>定着率100%を達成</div>
+    </div>
+    <div class="hero-free">助成金活用で、特別無料ご招待</div>
     <br>
-    <a href="https://mashimo-toshiaki.github.io/lp-sokukou/form.html" class="hero-cta-btn">無料で参加する →</a>
+    <a href="#apply" class="hero-cta-btn">無料で参加する →</a>
+    <p class="hero-note">先着10名限定｜定員に達し次第〆切</p>
   </div>
 </section>
 
@@ -447,6 +451,16 @@
     <p class="voice-title">📣 参加者の声</p>
 
     <div class="voice-card">
+      <p class="voice-card-title">自社の現在地と未来（３年後・５年後）を再確認する良いきっかけに。「求める人材像」や「スタッフが幸せに働ける組織づくり」のヒントが見つかりました</p>
+      <img src="steatrust.png" alt="株式会社ステアトラスト" style="max-width:160px;display:block;margin:12px 0 16px;">
+      <p class="voice-card-name">ベルトコンベアー設計・製造業　株式会社ステアトラスト　様</p>
+      <p class="voice-card-body">
+        オンラインで参加させていただきました。自社だけではどうしても主観的になりがちですが、セミナー講義や、ご同席いただいた皆様のお話を直接伺うことができ、「自社の客観的な現在地」を知る非常に大きな収穫になりました。<br><br>
+        特に学びになったのは、求める人材像を決める際、目先の状況だけでなく「中長期的な視点」や「人柄」を考慮することの大切さです。セミナーを通して、これからの３年後・５年後に向けて「社員みんなで想いを一つにし、スタッフが幸せに働ける組織をどう作っていくか」を改めて確認し合う良いきっかけをいただきました。自社に持ち帰り、社内全体でじっくり話し合い、共有して次の一歩に活かしたいと思います。
+      </p>
+    </div>
+
+    <div class="voice-card">
       <p class="voice-card-title">無駄な応募への対応に疲れていた弊社が、「地元密着の採用・定着術」で真の成果を実感！セミナーから実際のサポートまで依頼して本当に良かったです</p>
       <img src="tano.jpg" alt="株式会社タノ製作所" style="max-width:200px;display:block;margin:12px 0 16px;border-radius:8px;">
       <p class="voice-card-name">自動車部品製造業　株式会社タノ製作所　様</p>
@@ -454,16 +468,6 @@
         以前は全国規模の大手求人会社に依頼していましたが、遠方からの冷やかしのような応募ばかりで返信すら来ず、「現実性のない対応」に無駄な時間と徒労感ばかりが募っていました。しかし今回のセミナーを通して、「うちのような現場仕事の会社は、地元密着で親身になってくれるサポートこそが現実的で不可欠だ」と心から痛感しました。<br><br>
         セミナーでは、自社の強み・魅力の見つけ方はもちろん、「なぜ今までのやり方では欲しい人材からの応募が来なかったのか」の根本的な理由がスッキリ理解できました。また、会場で他社の社長様方と交流し、同じ悩みを共有できたことも大きな励みになりました。<br><br>
         採用定着支援を利用後は、単に求人票作成をするだけでなく、応募後の「採用につなげる対応」や「定着する人材を見極める方法」までサポートしていただき心強かったです。地域に特化したハート＆ブレインさんにご相談して、本当に良かったです！
-      </p>
-    </div>
-
-    <div class="voice-card">
-      <p class="voice-card-title">自社の現在地と未来（３年後・５年後）を再確認する良いきっかけに。「求める人材像」や「スタッフが幸せに働ける組織づくり」のヒントが見つかりました</p>
-      <img src="steatrust.png" alt="株式会社ステアトラスト" style="max-width:160px;display:block;margin:12px 0 16px;">
-      <p class="voice-card-name">ベルトコンベアー設計・製造業　株式会社ステアトラスト　様</p>
-      <p class="voice-card-body">
-        オンラインで参加させていただきました。自社だけではどうしても主観的になりがちですが、セミナー講義や、ご同席いただいた皆様のお話を直接伺うことができ、「自社の客観的な現在地」を知る非常に大きな収穫になりました。<br><br>
-        特に学びになったのは、求める人材像を決める際、目先の状況だけでなく「中長期的な視点」や「人柄」を考慮することの大切さです。セミナーを通して、これからの３年後・５年後に向けて「社員みんなで想いを一つにし、スタッフが幸せに働ける組織をどう作っていくか」を改めて確認し合う良いきっかけをいただきました。自社に持ち帰り、社内全体でじっくり話し合い、共有して次の一歩に活かしたいと思います。
       </p>
     </div>
 
@@ -480,6 +484,7 @@
   <div class="container">
     <h2 class="section-title">セミナーで学べること</h2>
     <p class="section-lead">現場の実情に即した、明日から使えるノウハウをお伝えします</p>
+    <div class="divider" style="background:#ffd700;"></div>
     <div class="curriculum-grid">
       <div class="curriculum-item">
         <div class="curriculum-num">1</div>
@@ -558,20 +563,20 @@
       <div class="reason-card">
         <div class="reason-num">理由 1</div>
         <h3>採用失敗で苦しい思いをしてほしくない</h3>
-        <p>かつての私のように、大切なスタッフを失い後悔してほしくないから。「辞めない採用」の手法を一人でも多くの経営者にお伝えしたい、その一心からです。</p>
+        <p>かつての私のように、大切なスタッフを失い後悔してほしくないから。「辞めない採用」の手法を一人でも多くの経営者にお伝えしたいという想いからです。</p>
       </div>
       <div class="reason-card">
         <div class="reason-num">理由 2</div>
         <h3>群馬の中小企業に元気になってほしい</h3>
-        <p>社長と社員が同じ方向を向く「理念型採用」を通じて、自分らしく活躍できる職場を増やし、群馬県の中小零細企業に活気を取り戻したいからです。</p>
+        <p>社長と社員が同じ方向を向く「理念型採用」を通じて、自分らしく活躍できる職場を増やし、群馬県の活気ある中小零細企業の輪を広げたいと願っています。</p>
       </div>
       <div class="reason-card">
         <div class="reason-num">理由 3</div>
         <h3>知らなかったことで損をしてほしくない</h3>
-        <p>採用・人材育成に活用できる助成金を知らないまま機会を逃している企業が多くあります。受給できるはずの助成金を「知らなかった」だけで取り逃してほしくないからです。</p>
+        <p>採用・人材育成に活用できる助成金を知らないまま機会を逃している企業が多くあります。受給できるはずの助成金を「知らなかった」だけで取り逃さないように。</p>
       </div>
     </div>
-    <p style="text-align:center;margin-top:28px;font-size:16px;font-weight:bold;color:var(--primary);">このセミナーで、「ほしい人材を採用し、長く定着してもらう」ための具体的な方法がわかります。</p>
+    <p style="text-align:center;margin-top:28px;font-size:14px;color:var(--text-light);">※ しつこい売り込みは一切いたしません。</p>
   </div>
 </section>
 
@@ -600,21 +605,9 @@
         1964年高崎市生まれ・在住。建設会社での16年勤務とリストラ経験から「人の専門家」社労士へ転身。顧客ゼロから開業し、23年目でスタッフ15名・支援先300社超の事務所へ成長。<br><br>
         中小企業の採用・定着・育成、人事考課制度や社内規程整備を通じて人と組織の成長を支援。自社でも採用の失敗を経験しているからこそ、机上論ではなく実践から得た学びを伝えることを大切にしている。
       </p>
-      <div style="margin-top:24px;display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start;">
-        <div style="text-align:center;">
-          <p style="font-size:13px;font-weight:bold;color:var(--text-light);margin-bottom:10px;">📖 著書</p>
-          <img src="人事_本.png" alt="著書" style="max-width:140px;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,0.15);">
-        </div>
-        <div style="flex:1;min-width:200px;">
-          <p style="font-size:13px;font-weight:bold;color:var(--text-light);margin-bottom:10px;">📰 メディア掲載</p>
-          <div style="display:flex;gap:16px;align-items:flex-start;">
-            <img src="ぐんま経済.png" alt="ぐんま経済" style="max-width:110px;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,0.15);flex-shrink:0;">
-            <div>
-              <p style="font-size:13px;font-weight:bold;color:var(--primary);margin-bottom:6px;">ぐんま経済 5月号 掲載</p>
-              <p style="font-size:13px;color:var(--text-light);line-height:1.8;">【労務Q&amp;A】コーナーにて、<br>「中小企業のカスタマーハラスメント対策<br>〜企業が取るべき実務対応〜」<br>を執筆。</p>
-            </div>
-          </div>
-        </div>
+      <div class="media-row">
+        <span class="media-badge">📚 著書「人事を変えれば社員は育つ」</span>
+        <span class="media-badge">📰 雑誌「ぐんま経済」掲載</span>
       </div>
     </div>
 
@@ -654,42 +647,19 @@
         </td>
       </tr>
       <tr>
-  <th>日程</th>
-  <td>
-    
-    <table style="margin-top:8px;border-collapse:collapse;width:100%;font-size:14px;">
-      <tr style="background:#e8f0fe;font-weight:bold;">
-        <td style="padding:6px 10px;border:1px solid #ccc;">日時</td>
-        <td style="padding:6px 10px;border:1px solid #ccc;">時間</td>
-        <td style="padding:6px 10px;border:1px solid #ccc;">形式</td>
+        <th>日程</th>
+        <td>詳細はお申し込み後にご案内いたします<br><span style="font-size:13px;color:#888;">（18時30分〜開始）</span></td>
       </tr>
-      <tr>
-        <td style="padding:6px 10px;border:1px solid #ccc;">2026年11月11日（水）</td>
-        <td style="padding:6px 10px;border:1px solid #ccc;">14:00〜15:30</td>
-        <td style="padding:6px 10px;border:1px solid #ccc;">会場</td>
-      </tr>
-      <tr>
-        <td style="padding:6px 10px;border:1px solid #ccc;">2026年11月20日（金）</td>
-        <td style="padding:6px 10px;border:1px solid #ccc;">14:00〜15:30</td>
-        <td style="padding:6px 10px;border:1px solid #ccc;">会場</td>
-      </tr>
-      <tr>
-        <td style="padding:6px 10px;border:1px solid #ccc;">2026年11月27日（金）</td>
-        <td style="padding:6px 10px;border:1px solid #ccc;">15:00〜16:30</td>
-        <td style="padding:6px 10px;border:1px solid #ccc;">オンライン</td>
-      </tr>
-    </table>
-  </td>
-</tr>
       <tr>
         <th>定員</th>
-        <td><strong>先着20名限定</strong> <span class="limit-badge">残りわずか</span></td>
+        <td><strong>先着10名限定</strong> <span class="limit-badge">残りわずか</span></td>
       </tr>
       <tr>
         <th>参加費</th>
         <td>
           <span class="price-old">5,000円</span><br>
           <span class="price-new">0円</span>（特別無料ご招待）<br>
+          <span style="font-size:13px;color:#888;">※助成金活用により無料でご招待</span>
         </td>
       </tr>
       <tr>
@@ -708,12 +678,12 @@
 <section class="cta-section">
   <div class="container">
     <h2>「半信半疑」の方ほど、<br>ぜひ実際の事例をご確認ください</h2>
-    <p>求人票をちょっと書き換えただけで、本当に応募や定着が変わるのか？<br>会場またはオンラインで添削事例を直接ご覧いただけます。<br>先着20名・特別無料。</p>
-    <a href="https://mashimo-toshiaki.github.io/lp-sokukou/form.html" class="cta-btn" target="_blank">無料でセミナーに申し込む →</a>
+    <p>求人票をちょっと書き換えただけで、本当に応募や定着が変わるのか？<br>会場またはオンラインで添削事例を直接ご覧いただけます。<br>先着10名・特別無料。定員に達し次第〆切です。</p>
+    <a href="https://www.heart-brain.co.jp/" class="cta-btn" target="_blank">無料でセミナーに申し込む →</a>
 
     <div class="postscript">
       <strong>＜追伸＞</strong><br>
-      採用に悩む経営者ほど「条件をもっと上げなければ」と考えがちです。しかし求人票の<strong>「ある1か所」</strong>を変えるだけで、給与や福利厚生を変えずに応募数・定着率が劇的に変わった事例を、私たちは何度も目の当たりにしてきました。今回は、その具体的な方法を先着20名様に限定公開します。
+      採用に悩む経営者ほど「条件をもっと上げなければ」と考えがちです。しかし求人票の<strong>「ある1か所」</strong>を変えるだけで、給与や福利厚生を変えずに応募数・定着率が劇的に変わった事例を、私たちは何度も目の当たりにしてきました。今回は、その具体的な方法を先着10名様に限定公開します。
     </div>
   </div>
 </section>
