@@ -265,8 +265,7 @@
     <!-- Google Apps Script に送信 -->
     <form id="seminar-form"
           action="https://script.google.com/macros/s/AKfycbzI7hov38PypPgSxzNi8LLi29ZpuCxlc7pyPx2UvKrrNmg7LG3t8UrJ666conNBMdM/exec"
-          method="POST"
-          target="hidden-iframe">
+          method="POST">
 
       <div class="field-group">
         <label>会社名<span class="required">必須</span></label>
@@ -344,9 +343,6 @@
   </div>
 </div>
 
-<!-- Googleフォーム送信用の非表示iframe -->
-<iframe name="hidden-iframe" style="display:none;"></iframe>
-
 <!-- ===== FOOTER ===== -->
 <footer>
   <p>ハート＆ブレイン株式会社 / 真下労務サポートオフィス</p>
@@ -370,9 +366,16 @@
     });
   });
 
-  // フォーム送信後に成功メッセージを表示（iframeで送信するため）
+  // フォーム送信（fetch使用・スマホ対応）
   const form = document.getElementById('seminar-form');
-  form.addEventListener('submit', function() {
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+    fetch(form.action, {
+      method: 'POST',
+      mode: 'no-cors',
+      body: formData
+    });
     setTimeout(function() {
       form.style.display = 'none';
       document.getElementById('success-msg').style.display = 'block';
